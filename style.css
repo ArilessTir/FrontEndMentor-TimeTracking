@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #0D1323;
+    color: white;
+    position: relative;
+}
+
+
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 500px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.id-card{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: hsl(235, 46%, 20%);
+    position: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#id-info{
+    display: flex;
+    flex-direction: column;
+    background: hsl(246, 80%, 60%);
+    height: 70%;
+    border-radius: 20px;
+    padding:0 40px;
+}
+
+
+#id-info img{
+    width: 80px;
+    margin: 30px 0;
+}
+
+#id-info h1{
+    font-size: 40px;
+}
+
+#id-option .opt{
+    list-style-type: none;
+    margin: 20px 40px;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+}
+
+
+#id-option .opt:hover{
+    color: hsl(264, 64%, 52%);
+    transition: 0.3s;
+}
+
+#id-option .opt.active{
+    opacity: 1;
+}
+
+
+
+/*---------- CARD ----------*/
+.card-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    height: 85%;
+    width: 100%;
+    bottom: 0;
+}
+
+.card-content span {
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content h1{
+    margin:20px 0px 0px 40px;
+    font-size: 40px;
+}
+
+.card-content .title-section {
+    font-weight: 900;
+}
+
+/*---------- CARD1 ----------*/
+
+.card#card1{
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.card#card1 .color {
+    background:hsl(15, 100%, 70%) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*---------- CARD2 ----------*/
+
+.card#card2 {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card#card2 .color {
+    background:hsl(145, 58%, 55%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*---------- CARD3----------*/
+.card#card3 {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card#card3 .color {
+    background:hsl(195, 74%, 62%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+/*---------- CARD4----------*/
+.card#card4 {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card#card4 .color {
+    background:hsl(264, 64%, 52%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+/*---------- CARD5----------*/
+.card#card5 {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card#card5 .color {
+    background:hsl(348, 100%, 68%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+/*---------- CARD6----------*/
+.card#card6 {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card#card6 .color {
+    background: hsl(43, 84%, 65%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.attribution{
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+@media (max-width: 1440px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+        
+    #id-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #id-info #identidy {
+        margin: 0 40px;
+    }
+
+    #id-option{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+  /*---------- CARD ----------*/
+
+.card{
+    flex-shrink: 0;
+}
+
+.card-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    height: 85%;
+    width: 100%;
+    bottom: 0;
+}
+
+.card-content span {
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card-content .hour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*---------- CARD ----------*/
+
+.card#card1{
+    border-radius: 20px;
+    height: 200px;  
+}
+.card#card2{
+    border-radius: 20px;
+    height: 200px;  
+}
+.card#card3{
+    border-radius: 20px;
+    height: 200px;  
+}
+
+.card#card4{
+    border-radius: 20px;
+    height: 200px;  
+}
+.card#card5{
+    border-radius: 20px;
+    height: 200px;  
+}
+.card#card6{
+    border-radius: 20px;
+    height: 200px;  
+}
+
+
+}
